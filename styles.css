@@ -5,7 +5,7 @@
 }
 
 #preloader {
-  background: #fff url(./LUXIRISE.gif) no-repeat center center;
+  background: #fff url(./images/LUXIRISE.gif) no-repeat center center;
   background-size: 10%;
   width: 100%;
   height: 100vh;
@@ -98,7 +98,7 @@
   padding: 50px;
 }
 
-.newin {
+.newind {
   position: absolute;
   top: 90px;
   width: 100%;
@@ -108,11 +108,101 @@
   overflow: hidden;
 }
 
-.newin > div {
+.newind > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
 }
-
+.womennav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.womennav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+.mennav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.mennav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+.childrennav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.childrennav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+.outwearnav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.outwearnav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+.bagsnav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.bagsnav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+.storiesnav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.storiesnav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+.beyondnav {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  display: none;
+  overflow: hidden;
+}
+.beyondnav > div {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
 /*end hovering cat of navbar  */
 /*Start on background video styling */
 #maincontainer > video {
@@ -155,7 +245,109 @@
 /*End styling to the category cards  */
 
 /* Start Media query   */
+
+/* Media query end  */
+#textcontentmain {
+  padding: 70px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textcontentmain > h1 {
+  padding: 10px;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+#humbu {
+  margin: auto;
+  margin-right: 10px;
+  display: none;
+}
+.humbergercontent {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 0;
+  transition: 0.4s;
+  height: fit-content;
+  font-family: "Roboto", sans-serif;
+  padding: 4%;
+  display: none;
+  /* overflow: hidden; */
+  /* background-color: #fff; */
+}
+.humbergercontent > ul {
+  list-style-type: none;
+}
+.humbergercontent > ul > li {
+  padding: 15px;
+}
+.humbergercontent > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.threelast > img {
+  width: 30px;
+  cursor: pointer;
+}
+.threelast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.ladyimg {
+  width: 100%;
+}
+.ladyimg > img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.uppfooter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 50px;
+  margin: auto;
+
+  /* border: 1px solid red; */
+}
+.uppfooter > div {
+  padding: 50px;
+}
+.inputsign {
+  border: none;
+  outline: none;
+}
+.uppfooter > div > h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.uppfooter > div > p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.footer {
+  padding: 50px;
+  color: rgb(99, 99, 99);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer > p > a {
+  text-decoration: none;
+  color: rgb(99, 99, 99);
+}
 @media screen and (max-width: 1000px) {
+  .uppfooter {
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid red; */
+  }
+  #humbu {
+    display: block;
+  }
   .middle {
     display: none;
   }
@@ -163,6 +355,13 @@
     justify-content: space-between;
     padding: 20px;
   }
+  .last {
+    display: none;
+  }
 }
-
-/* Media query end  */
+@media screen and (max-width: 600px) {
+  .uppfooter {
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 1px solid red; */
+  }
+}
