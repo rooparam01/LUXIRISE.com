@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Rabbit Print Silk Oversized Shirt",
+    "image": "https://assets.burberry.com/is/image/Burberryltd/FE183407-B2E4-4A84-8069-AB71A41E659A?$BBY_V2_ML_1x1$&wid=2000&hei=2000",
+    "price": "5000",
+    "qty": 1,
+    "colour": "Black",
+    "size": "Free Size",
+    "description": "An oversized shirt cut from Italian-woven silk crepe de chine. The design is patterned with motifs celebrating the Year of the Rabbit.",
+    "category": "women's cloths"
+  },
+  {
+    "id": 2,
+    "name": "Check Technical Wool Jacquard Cardigan",
+    "image": "https://assets.burberry.com/is/image/Burberryltd/C11F825C-2F21-4DB0-BE8B-CC2DB37028A8?$BBY_V2_ML_1x1$&wid=998&hei=998",
+    "price": "7000",
+    "qty": 1,
+    "colour": "Mixed",
+    "size": "Free Size",
+    "description": "A technical wool cardigan in jacquard-woven check, finished with chunky rib-knit trims.",
+    "category": "women's cloths"
+  },
+  {
+    "id": 3,
+    "name": "Animal Intarsia Wool Cashmere Cardigan",
+    "image": "https://assets.burberry.com/is/image/Burberryltd/98613861-2E13-4B85-8096-33D3C995A18F?$BBY_V2_ML_1x1$&wid=998&hei=998",
+    "price": "9000",
+    "qty": 1,
+    "colour": "Black",
+    "size": "Free Size",
+    "description": "A V-neck cardigan in wool and cashmere, highlighted with an intarsia-knitted design of farmyard animals – an ode to the British countryside. The regular-fit design is detailed with exaggerated rings.",
+    "category": "women's cloths"
+  }
+]

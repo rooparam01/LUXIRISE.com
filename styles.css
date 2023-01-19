@@ -214,7 +214,9 @@
   bottom: 20px;
   left: 20px;
 }
-.womensclothtag > p {
+.womensclothtag > a {
+  text-decoration: none;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 4vw;
