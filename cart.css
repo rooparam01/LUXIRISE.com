@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  text-align: center;
+}
+#container img {
+  width: 200px;
+}
+
+#container > div {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* padding-bottom: 50px; */
+  /* border: 1px solid rgb(204, 204, 204); */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#container > div > button {
+  width: 20%;
+  padding: 5px;
+  font-size: 20px;
+  /* position: absolute; */
+  right: 40%;
+  bottom: 5px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#container > div > button:hover {
+  border: 1px solid black;
+  background-color: #fff;
+  color: black;
+}
+#container > div > p {
+  font-size: 20px;
+  color: rgb(144, 144, 144);
+}
+#container > h4 {
+  font-size: 18px;
+}
+.cheak {
+  width: 40%;
+  margin-top: 50px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+h2 {
+  margin-top: 40px;
+}

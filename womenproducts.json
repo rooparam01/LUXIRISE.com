@@ -31,5 +31,16 @@
     "size": "Free Size",
     "description": "A V-neck cardigan in wool and cashmere, highlighted with an intarsia-knitted design of farmyard animals – an ode to the British countryside. The regular-fit design is detailed with exaggerated rings.",
     "category": "women's cloths"
+  },
+  {
+    "id": 4,
+    "name": "Rabbit Intarsia Wool Oversized Sweater",
+    "image": "https://assets.burberry.com/is/image/Burberryltd/D86A733E-B68E-46C1-A8B2-F0036A2A0DE2?$BBY_V2_ML_1x1$&wid=998&hei=998",
+    "price": "4500",
+    "qty": 1,
+    "colour": "Black",
+    "size": "Free Size",
+    "description": "A crew-neck sweater in soft wool. The design is intarsia-knitted with motifs celebrating the Year of the Rabbit.",
+    "category": "women's cloths"
   }
 ]
