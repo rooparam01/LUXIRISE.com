@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+#container img {
+  width: 100%;
+}
+
+#container > div {
+  position: relative;
+  padding-bottom: 50px;
+  /* border: 1px solid rgb(204, 204, 204); */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#container > div > button {
+  width: 20%;
+  padding: 5px;
+  font-size: 20px;
+  position: absolute;
+  right: 40%;
+  bottom: 5px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#container > div > button:hover {
+  border: 1px solid black;
+  background-color: #fff;
+  color: black;
+}
+#container > div > p {
+  font-size: 20px;
+  color: rgb(144, 144, 144);
+}
+#container > h4 {
+  font-size: 18px;
+}

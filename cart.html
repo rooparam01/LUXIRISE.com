@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./cart.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+    <h2>Total Cart : <span id="total">0</span></h2>
+    <button class="cheak">CHECKOUT</button>
+  </body>
+  <script>
+    let contEl = document.getElementById("container");
+    let totalEl = document.getElementById("total");
+    let cart = JSON.parse(localStorage.getItem("productcart")) || [];
+    displayData(cart);
+    function displayData(fetchedData) {
+      let totalcartvalue = 0;
+      for (let i = 0; i < fetchedData.length; i++) {
+        totalcartvalue += Number(fetchedData[i].price);
+      }
+      totalEl.innerText = totalcartvalue;
+      console.log(totalcartvalue);
+      contEl.innerHTML = "";
+      fetchedData.forEach((element) => {
+        let divEl = document.createElement("div");
+
+        let imgEl = document.createElement("img");
+        imgEl.src = element.image;
+        let nameEl = document.createElement("p");
+        nameEl.innerText = element.name;
+        let priceEl = document.createElement("h3");
+        priceEl.innerText = `Price : ${element.price}`;
+
+        let removebtnEl = document.createElement("button");
+        removebtnEl.innerText = "REMOVE";
+        removebtnEl.addEventListener("click", () => {
+          cart = cart.filter((el, index) => {
+            if (el.id == element.id) {
+              return false;
+            } else {
+              return true;
+            }
+          });
+
+          localStorage.setItem("productcart", JSON.stringify(cart));
+          displayData(cart);
+        });
+        divEl.append(imgEl, priceEl, nameEl, removebtnEl);
+        contEl.append(divEl);
+      });
+    }
+  </script>
+</html>

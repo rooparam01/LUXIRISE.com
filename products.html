@@ -4,22 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Products</title>
+    <link rel="stylesheet" href="./products.css" />
   </head>
   <body>
-    <h1>Hello world!!</h1>
+    <div id="container"></div>
   </body>
   <script>
+    let fetchedData;
+    let contEl = document.getElementById("container");
     let API = "./womenproducts.json";
+    let cart = JSON.parse(localStorage.getItem("productcart")) || [];
     fetchAPI(API);
+
     async function fetchAPI(API) {
       try {
         let catchitem = await fetch(API);
-        let data = await catchitem.json();
-        console.log(data);
+        let data1 = await catchitem.json();
+        fetchedData = data1;
+        displayData(fetchedData);
       } catch (error) {
         console.log(error);
       }
+    }
+    function displayData(fetchedData) {
+      contEl.innerHTML = "";
+      fetchedData.forEach((element) => {
+        let divEl = document.createElement("div");
+
+        let imgEl = document.createElement("img");
+        imgEl.src = element.image;
+        let nameEl = document.createElement("p");
+        nameEl.innerText = element.name;
+        let priceEl = document.createElement("h3");
+        priceEl.innerText = `Price : ${element.price}`;
+        let colorEl = document.createElement("h4");
+        colorEl.innerText = `Colour : ${element.colour}`;
+        let desEl = document.createElement("p");
+        desEl.innerText = `Desctription : ${element.description}`;
+        let addbtnEl = document.createElement("button");
+        addbtnEl.innerText = "ADD TO CART";
+        addbtnEl.addEventListener("click", () => {
+          let flag = false;
+          for (let i = 0; i < cart.length; i++) {
+            if (cart[i].id == element.id) {
+              flag = true;
+            }
+          }
+          if (flag == false) {
+            cart.push(element);
+            alert("Product added to cart");
+          } else {
+            alert("product already in the cart");
+          }
+          localStorage.setItem("productcart", JSON.stringify(cart));
+        });
+        divEl.append(imgEl, priceEl, nameEl, colorEl, desEl, addbtnEl);
+        contEl.append(divEl);
+      });
     }
   </script>
 </html>
