@@ -43,3 +43,57 @@
 #container > h4 {
   font-size: 18px;
 }
+#navbar {
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  padding: 0 0;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  transition: 0.5s;
+  padding: 15px 0;
+}
+#navbar:hover {
+  background-color: #fff;
+}
+#navbar > a {
+  text-decoration: none;
+}
+
+#navbar > a > p {
+  width: 15%;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  font-size: 40px;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.middle {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+
+  margin-bottom: 13px;
+}
+
+.middle a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+.last {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.last img {
+  width: 20px;
+}

@@ -33,7 +33,6 @@
   top: 0;
   left: 0;
   padding: 0 0;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   background: transparent;
@@ -44,8 +43,10 @@
 #navbar:hover {
   background-color: #fff;
 }
-
-#navbar > p {
+#navbar > a {
+  text-decoration: none;
+}
+#navbar > a > p {
   width: 15%;
   /* display: flex; */
   /* justify-content: space-around; */
@@ -54,6 +55,7 @@
   font-family: "Poppins", sans-serif;
   color: rgb(0, 0, 0);
 }
+
 .middle {
   width: 60%;
   display: flex;
@@ -96,8 +98,15 @@
 .giftsoptions > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
 }
-
+.giftsoptions > div > ul {
+  list-style: none;
+}
+.giftsoptions > div > p {
+  font-size: 20px;
+  margin: 20px;
+}
 .newind {
   position: absolute;
   top: 90px;
@@ -111,6 +120,14 @@
 .newind > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.newind > div > ul {
+  list-style: none;
+}
+.newind > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .womennav {
   position: absolute;
@@ -124,6 +141,14 @@
 .womennav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.womennav > div > ul {
+  list-style: none;
+}
+.womennav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .mennav {
   position: absolute;
@@ -137,6 +162,14 @@
 .mennav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.mennav > div > ul {
+  list-style: none;
+}
+.mennav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .childrennav {
   position: absolute;
@@ -150,6 +183,14 @@
 .childrennav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.childrennav > div > ul {
+  list-style: none;
+}
+.childrennav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .outwearnav {
   position: absolute;
@@ -163,6 +204,14 @@
 .outwearnav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.outwearnav > div > ul {
+  list-style: none;
+}
+.outwearnav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .bagsnav {
   position: absolute;
@@ -176,6 +225,14 @@
 .bagsnav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.bagsnav > div > ul {
+  list-style: none;
+}
+.bagsnav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .storiesnav {
   position: absolute;
@@ -189,6 +246,14 @@
 .storiesnav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.storiesnav > div > ul {
+  list-style: none;
+}
+.storiesnav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 .beyondnav {
   position: absolute;
@@ -202,6 +267,14 @@
 .beyondnav > div {
   font-family: "Roboto", sans-serif;
   padding: 50px;
+  line-height: 30px;
+}
+.beyondnav > div > ul {
+  list-style: none;
+}
+.beyondnav > div > p {
+  font-size: 20px;
+  margin: 20px;
 }
 /*end hovering cat of navbar  */
 /*Start on background video styling */
